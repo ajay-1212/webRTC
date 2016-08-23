@@ -1,5 +1,5 @@
 // note, io.listen(<port>) will create a http server for you
-var io = require('socket.io').listen(8080);
+var io = require('socket.io').listen(process.env.PORT || 3000);
 var nick = "";
 var socketList = [];
 var counter = 0;
